@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/default.cshtml";
+}
+
+<h2>Index</h2>
+<form method="post" action="~/QuanLyKH/AddSV">
+    <div>
+        Ma SV:
+        <input type="text" name="sid" />
+    </div>
+    <div>
+        Ten SV:
+        <input type="text" name="sname" />
+    </div>
+    <div>
+        Tuoi:
+        <input type="text" name="sage" />
+    </div>
+    <div>
+        Diem:
+        <input type="text" name="diem" />
+    </div>
+    <div>
+        <input type="submit" value="Them" />
+    </div>
+
+</form>
+

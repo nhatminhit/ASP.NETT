@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Display2List";
+    Layout = "~/Views/Shared/default.cshtml";
+
+    List<ktra.Models.SINHVIEN> li1 = ViewBag.li1;
+    List<ktra.Models.SINHVIEN> li2 = ViewBag.li2;
+}
+
+<h2>Display2List</h2>
+<h3>Danh sách 1</h3>
+<div>
+    <table>
+        <tr>
+            <th><div>Ma SV</div></th>
+            <th><div>Ten SV</div></th>
+            <th><div>Tuoi</div></th>
+            <th><div>Diem</div></th>
+        </tr>
+        @foreach (var item in li1)
+        {
+            <tr>
+                <th><div>@item.sid</div></th>
+                <th><div>@item.sname</div></th>
+                <th><div>@item.sage</div></th>
+                <th><div>@item.diem</div></th>
+            </tr>
+        }
+    </table>
+</div>
+<h3>Danh sách 2</h3>
+<div>
+    <table>
+        <tr>
+            <th><div>Ma SV</div></th>
+            <th><div>Ten SV</div></th>
+            <th><div>Tuoi</div></th>
+            <th><div>Diem</div></th>
+        </tr>
+        @foreach (var item in li2)
+        {
+            <tr>
+                <th><div>@item.sid</div></th>
+                <th><div>@item.sname</div></th>
+                <th><div>@item.sage</div></th>
+                <th><div>@item.diem</div></th>
+            </tr>
+        }
+    </table>
+</div>
+

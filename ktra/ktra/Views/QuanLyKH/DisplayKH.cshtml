@@ -1,0 +1,31 @@
+﻿@model ktra.Models.SINHVIEN_KHOAHOC
+@{
+    ViewBag.Title = "DisplayKH";
+    Layout = "~/Views/Shared/default.cshtml";
+}
+
+<h2>DisplayKH</h2>
+<div>
+    <h3>Ma khoa hoc:</h3>@Model.kh.khid
+    <h3>Ten khoa hoc:</h3>@Model.kh.khname
+</div>
+<div>
+    <table>
+        <tr>
+            <th><div>Ma SV</div></th>
+            <th><div>Ten SV</div></th>
+            <th><div>Tuoi</div></th>
+            <th><div>Diem</div></th>
+        </tr>
+        @foreach (var item in Model.listSV)
+        {
+            <tr>
+                <th><div>@item.sid</div></th>
+                <th><div>@item.sname</div></th>
+                <th><div>@item.sage</div></th>
+                <th><div>@item.diem</div></th>
+            </tr>
+        }
+    </table>
+</div>
+
